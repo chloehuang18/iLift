@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLearned - Web</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
     <header><div class="title">Web Items</div></header>
@@ -28,11 +29,87 @@
         <section>
             <div class="section-title">CSS</div>
             <ul>
-                <li>Selectors</li>
+                <li>
+                <details>
+                    <summary>
+                        <input type="checkbox" name="Selectors" id="css-selectors">
+                        <label for="Selectors">Selectors</label>
+                    </summary>
+                    <ul>
+                        <li><details>
+                                <summary>
+                                    <input type="checkbox" name="element-selector" id="css-selector-element">
+                                    <label for="element-selector">Element Selector</label>
+                                </summary>
+                                <code>
+                                    body {}
+                                </code>
+                        </details></li>
+                        <!-- li*8>details>summary>input:checkbox+label{ Selector}^code -->
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="id-selector" id="css-selectors-id">
+                                    <label for="id-selector">Id Selector</label></summary>
+                                <code>#id {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="class-selector" id="css-selectors-class">
+                                    <label for="class-selector">Class Selector</label></summary>
+                                <code>.class {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="descendant-selector" id="css-selectors-descendant">
+                                    <label for="descendant-selector">Descendant Selector</label></summary>
+                                <code>.class-1 .class-2 {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="universal-selector" id="css-selectors-universal">
+                                    <label for="universal-selector">Universal Selector</label></summary>
+                                <code>* {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="group-selector" id="css-selectors-group">
+                                    <label for="group-selector">Group Selector</label></summary>
+                                <code>class-a, class-b {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="attribute-selector" id="css-selectors-attribute">
+                                    <label for="attribute-selector">Attribute Selector</label></summary>
+                                <code>[class="class"] {}</code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="sibling-selector" id="css-selectors-sibling">
+                                    <label for="sibling-selector">Sibling Selector</label></summary>
+                                <code></code>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary><input type="checkbox" name="adjecent-sibling-selector" id="css-selectors-sibling-adjecent">
+                                    <label for="sibling-selector">Adjecent Sibling Selector</label></summary>
+                                <code></code>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+                </li>
                 <li>Properties</li>
                 <li>Values</li>
             </ul>
         </section>
     </main>
+
 </body>
 </html>
